@@ -63,4 +63,4 @@ def draw_cam(model, img_path, save_path, transform=None, visheadmap=False):
 if __name__ == '__main__':
      model = models.resnet50(pretrained=True)
      transform = transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor(), transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
-     draw_cam(model, './11_left.jpg', './cam_11_left.png', transform=transform, visheadmap=True)
+     draw_cam(model, './1.jpg', './cam_1.png', transform=transform, visheadmap=True)
